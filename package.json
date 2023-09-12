@@ -19,12 +19,12 @@
   },
   "devDependencies": {
     "esbuild": "^0.19.2",
-    "glslx": "^0.2.13",
+    "glslx": "^0.3.0",
     "next": "^12.2.4",
     "nextra": "2.0.0-alpha.50",
     "nextra-theme-docs": "2.0.0-alpha.53",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "typescript": "^4.5.4"
+    "typescript": "^5.2.2"
   }
 }
