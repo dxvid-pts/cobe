@@ -1,4 +1,18 @@
 
+# Build
+run pnpm run build
+
+1. go to the file and remove the first `(() => {` and the last `})();`!
+2. The entry point is `src_default(canvas, params)` when NOT minified otherwise z
+
+3. Search for `z=(t,e)=>{let i=(r,n,o)=>({type:r,value:typeof e[n]=="undefined"` or similar
+eg via `)=>{` and make sure the function is called "z". later there should be "undefined" (for orientation)
+
+1. Miniify the code via https://skalman.github.io/UglifyJS-online/ and replace the code with the result
+2. Use the config under uglifyJS_config.txt for the minification
+3. check that entry point is `z` and that the function is called `z` in the minified code
+
+
 [![COBE](card.png)](https://cobe.vercel.app)
 
 <p align="center">A <b>lightweight (5kB)</b> WebGL globe lib. The name "COBE" stands for <a href="https://en.wikipedia.org/wiki/Cosmic_Background_Explorer" target="_blank">Cosmic Background Explorer</a>.</p>
