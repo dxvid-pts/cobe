@@ -10,6 +10,8 @@ esbuild
     minify: true,
     outfile: 'dist/renderer.min.js',
     format: 'iife',
+    treeShaking: true,
+    //target: ['chrome116', 'firefox117', 'safari16', 'edge116'],
     define: {
       __TEXTURE__: JSON.stringify(__TEXTURE__),
       ...Object.entries(__SHADER__)
